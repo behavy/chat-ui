@@ -27,6 +27,9 @@ export default defineConfig({
 	],
 	optimizeDeps: {
 		include: ["uuid", "@huggingface/transformers", "sharp", "@gradio/client"],
+		esbuildOptions: {
+      			platform: 'node' // ✅ Tells esbuild to use Node.js built-ins
+    		}
 	},
 	server: {
 		open: "/",
