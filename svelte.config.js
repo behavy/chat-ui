@@ -25,7 +25,7 @@ const config = {
 	preprocess: vitePreprocess(),
 	prerender: {
       		default: true
-    	}
+    	},
 	kit: {
 		adapter: adapter(),
 
