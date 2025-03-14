@@ -18,6 +18,9 @@ function loadTTFAsArrayBuffer() {
 }
 
 export default defineConfig({
+	build: {
+    		outDir: 'dist',  // Should output to `dist/`
+  	},
 	plugins: [
 		sveltekit(),
 		Icons({
