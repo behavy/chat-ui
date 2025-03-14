@@ -26,10 +26,7 @@ export default defineConfig({
 		loadTTFAsArrayBuffer(),
 	],
 	optimizeDeps: {
-		include: ["uuid", "@huggingface/transformers", "sharp", "@gradio/client"],
-		esbuildOptions: {
-      			platform: 'node' // ✅ Tells esbuild to use Node.js built-ins
-    		}
+		include: ["uuid", "@huggingface/transformers", "sharp", "@gradio/client"]
 	},
 	server: {
 		open: "/",
